@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  webapp:
+    networks: 
+      nginx:
+        aliases:
+          - gatekeeper
+    restart: always
+
+networks: 
+  nginx:
+    external: true
