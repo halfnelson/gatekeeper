@@ -2,6 +2,7 @@ version: '3'
 
 services:
   webapp:
+    image: halfnelson/gatekeeper:latest
     build: .
     ports:
       - 9999:9999
